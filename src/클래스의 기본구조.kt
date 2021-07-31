@@ -44,24 +44,25 @@ class Person (var name: String, val birthYear: Int )
 // 그런데 모든 Person의 인스턴스가 이러한 형식으로 자기 소개를 자주해야한다면 매번 println을 쓰는것은 비효율 적이겠지?
 // 그래서 자주 사용하는 공통적인 기능은 클래스내에 함수로 넣어준다.
 // 클래스에 함수를 추갸하는 방법은 먼저 아까 선언했던 클래스에 중괄호를 추가 하고 자기소개를 하는 함수를 하나 추가하면 된다.
-
-fun main() {
-    var a = Person("박보영", 1990)
-    var b = Person("전정국", 1997)
-    var c = Person("장원영", 2004)
-
-    a.introduce()
-    b.introduce()
-    c.introduce()
-
-}
-
-class Person (var name: String, val birthYear: Int ) {
-    fun introduce () {
-        println("안녕하세요. ${birthYear}년생 ${name}입니다") //* 클래스 내부에서는 속성 이름만 사용한다.
-    }
-}
-// 이제 인스턴스를 통해 이 함수를 참조하여 호출해주면 언제나 자기소개를 편하게 할 수 있다.
-
-// kotlin은 객체지향형 언어를 기반으로 함수형 언어의 장점을 흡수한 실용적인 언어다.
-// 따라서 객체지향의 기본구조가 되는 클래스를 이해하는 것이 무엇보다 중요하다.
+// fun main() {
+// var a = Person("박보영", 1990)
+// var b = Person("전정국", 1997)
+// var c = Person("장원영", 2004)
+//
+// a.introduce()
+// b.introduce()
+// c.introduce()
+//
+// }
+//
+// class Person (var name: String, val birthYear: Int ) {
+// fun introduce () {
+// println("안녕하세요. ${birthYear}년생 ${name}입니다") //* 클래스 내부에서는 속성 이름만 사용한다.
+// }
+// }
+// */
+//
+// // 이제 인스턴스를통해 이 함수를 참조하여 호출해주면 언제나 자기소개를 편하게 할 수 있다.
+//
+// // kotlin은 객체지향형 언어를 기반으로 함수형 언어의 장점을 흡수한 실용적인 언어다.
+// // 따라서 객체지향의 기본구조가 되는 클래스를 이해하는 것이 무엇보다 중요하
